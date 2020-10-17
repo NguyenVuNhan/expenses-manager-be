@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "json-server --watch db.json --port ${SERVER_PORT:-3001}"
+    "dev": "json-server --watch db.json --port ${SERVER_PORT:-5000} -H 0.0.0.0",
+    "lint": "eslint --ext .ts,.tsx .",
+    "lint:fix": "eslint --fix --ext .ts,.tsx ."
   },
   "author": "",
   "license": "ISC",
